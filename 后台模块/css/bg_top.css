@@ -1,0 +1,136 @@
+body{
+	background: url(../images1/topbg.gif) repeat-x;
+}
+h2{
+	font-weight: 200;
+	font-size: 12px;
+}
+.clr{
+	clear: both;
+}
+.top_left{
+	width: 300px;
+	float: left;
+}
+.top_left a img {
+	margin-top: 10px;
+}
+.top_middle{
+	float: left;
+}
+.top_middle ul li{
+	float: left;
+	margin: 10px 30px 10px 10px;
+}
+.top_middle ul li img{
+	width: 49px;
+}
+.top_middle ul li a{
+	color: #fff;
+}
+.top_right{
+	color: #fff;
+	float: right;
+	margin: 20px 10px 10px;
+}
+.top_right ul li{
+	float: left;
+	font-size: 14px;
+	padding: 0px 10px 0px 10px;
+	background: url(../images1/line.gif) no-repeat right;
+}
+.top_right>div{
+	font-size: 16px;
+	clear: both;
+	border-radius:30px; 
+	padding: 5px 15px 5px 0px;
+	background:url(../images1/ub1.png) repeat-x;
+}
+.top_right>div>span{
+	background: url(../images1/user.png) no-repeat 15px 5px;
+	padding-left: 35px;
+}
+.top_right>div>i{
+	padding-left: 20px;
+}
+.top_right>div>b{
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+	margin-left: 10px;
+	background: url(../images1/msg.png);
+	margin-right: 13px;
+}
+.main_left{
+	width: 187px;
+	float: left;
+}
+.lefttop{
+	background:url(../images1/tcbg.gif) repeat-x;
+	height: 40px;
+	color: #fff;
+	font-size:14px;
+	line-height: 40px;
+}
+.lefttop span{
+	background:url(../images1/leftico.png);
+	width: 20px;
+	height: 21px;
+	float: left;
+	margin: 10px 8px 0 8px;
+}
+.leftmenu{
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	overflow: hidden;
+	background:url(../images1/leftline.gif) repeat-y right;
+}
+.title{
+	cursor: pointer;
+	font-size:16px ;
+}
+.leftmenu>dd{
+	background: url(../images1/leftmenubg.gif) repeat-x;
+	font-size:14px;
+	font-weight: bold;
+	line-height: 35px;
+	border-right: 1px solid #b7d5df;
+}
+.leftmenu dd span{
+	margin: 7px 8px 5px 12px;
+}
+.menuson{
+    display: none;
+	clear: both;
+	line-height: 30px;
+	font-weight: normal;
+}
+.menuson li cite{
+	float: left;
+	margin: 7px 0 0 21px;
+	width: 16px;
+	height: 16px;
+	background:url(../images1/list.gif);
+}
+.menuson li a{
+	display: block;
+	color: #000;
+}
+.active{
+	position: relative;
+	background: url(../images1/libg.png)repeat-x;
+	line-height: 30px;
+	color: #fff;
+}
+.menuson li i{
+	position: absolute;
+	top: 9px;
+	right: 0;
+	z-index: 1000;
+	width: 6px;
+	height: 11px;
+	background: url(../images1/sj.png) no-repeat;
+}
+.main_right{
+	float: left;
+}

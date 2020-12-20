@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/shoppingShow.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/shoppingCart.js"></script>
+	<script src="js/hotAdvise.js"></script>
+</head>
+<body>
+	<!-- 顶部 start -->
+	<header class="top_bg">
+		<div class="top_content">
+			<div class="fl"><img src="images2/star.jpg">收藏 | HI，欢迎来订购 ！<a href="#" class="orange">[请登录]</a> <a href="#"  class="orange"> [免费注册]</a></div>
+		    <div class="fr">客户服务<img src="images2/arrow.gif">&nbsp;网站导航<img src="images2/arrow.gif">
+		      <div class="xl">
+		      	<!--购物车-->
+		        <div class="droparrow" onclick="showCar()">我的购物车<span class="shopcart"></span>
+        		<span class="orange">0</span>件<img src="images3/arrow.gif"/></div>
+		        <!--下拉菜单-->
+		        <div class="dropdown" id="dropdown" style="display: none" 
+		        	ondrop="drop(event)" ondragover="allowDrop(event)"> 
+		          <ul class="shop_pic">
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+	</header>
+	<!-- 顶部 end -->
+	<!-- logo+banner start -->
+	<div class=" clr logo_banner">
+		<div class="logo fl"><a href=""><img src="images3/logo.jpg" alt=""></a></div>
+		<div class="banner fr"><img src="images3/banner.jpg" alt="" class="fr"></div>
+		<div class="clr"></div>
+	</div>
+	<!-- logo+banner end -->
+    <!-- 菜单导航栏 start -->
+	<nav class="nav_bg">
+		 <div class="nav">&nbsp;</div>
+         <div class="nav"><a href="index.html" class="white">首页</a></div>
+         <div class="nav nav_active"><a href="shoppingShow.html" class="white">最新上架</a></div>
+         <div class="nav"><a href="#" class="white">品牌活动</a></div>
+         <div class="nav"><a href="#" class="white">原产直销</a></div>
+         <div class="nav"><a href="#" class="white">团购</a></div>
+         <div class="nav"><a href="#" class="white">限时抢购</a></div>
+         <div class="nav"><a href="#" class="white">促销打折</a></div>
+         <div class="nav">&nbsp;</div>
+	</nav>
+	<!-- 菜单导航栏 end -->
+	<!-- 中间部分 start -->
+	<section>
+		<div class="main">
+		<nav>
+			<ul class="left fl">
+				<li><span class="left_title">女装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">上衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">下装</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">连衣裙</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">内衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">男装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">T恤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">短裤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">衬衫</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">童装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">上衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">裤子</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">运动</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">运动裤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">跑步鞋</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+		    </ul>
+		</nav>
+		<div class=" fl middle">
+			<div class="new"><h3 class="pic_title">最新上架</h3>
+			<div class="pic_list">
+				<dl>
+					<div><a href="shoppingFrame.html"><img src="images3/shopshow/yifu1.jpg" alt=""></a></div>
+					<dt><span class="price">￥198.00元</span><span class="font12">324人购买</span></dt>
+					<dd>冬季新款牛仔外套架构连帽加绒牛仔棉衣</dd>
+				</dl>
+				<dl>
+					<div><a href=""><img src="images3/shopshow/yifu2.jpg" alt=""></a></div>
+					<dt><span class="price">￥198.00元</span><span class="font12">324人购买</span></dt>
+					<dd>冬季新款牛仔外套架构连帽加绒牛仔棉衣</dd>
+				</dl>
+				<dl>
+					<div><a href=""><img src="images3/shopshow/yifu3.jpg" alt=""></a></div>
+					<dt><span class="price">￥169.00元</span><span class="font12">534人购买</span></dt>
+					<dd>2015夏款韩版透气舒适简约半截袖</dd>
+				</dl>
+				<dl>
+					<div><a href=""><img src="images3/shopshow/yifu4.jpg" alt=""></a></div>
+					<dt><span class="price">￥198.00元</span><span class="font12">324人购买</span></dt>
+					<dd>冬季新款牛仔外套架构连帽加绒牛仔棉衣</dd>
+				</dl>
+			</div>
+			</div>
+			<div class="clr brand"><h3 class="pic_title">品牌活动</h3>
+			<ul class="pic_list2">
+				<li>
+					<img src="images3/shopshow/dress1.jpg" alt="">
+					<p>独家定制双层欧根沙里衬色时装大牌蓬蓬长裙</p>
+				</li>
+				<li>
+					<img src="images3/shopshow/dress2.jpg" alt="">
+					<p>夏季新款 简约通勤腰带修身大摆短袖连衣裙</p>
+				</li>
+				<li>
+					<img src="images3/shopshow/dress3.jpg" alt="">
+					<p>独家定制双层欧根沙里衬色时装大牌蓬蓬长裙</p>
+				</li>
+				<li>
+					<img src="images3/shopshow/dress4.jpg" alt="">
+					<p>独家定制双层欧根沙里衬色时装大牌蓬蓬长裙</p>
+				</li>
+			</ul>
+			</div>
+	    </div>
+	    <aside class="right_nav" id="right_nav">
+	    </aside>
+		<div class="clr"></div>
+	</div>
+	</section>
+	<!-- 中间部分 end -->
+    <!-- 底部 start -->
+	<footer>
+		<div class=" clr footer">
+		<div class="foot_title">
+			<ul class="foot_pic">
+				<li><img src="images3/gray1.jpg" alt=""></li>
+				<li><img src="images3/gray2.jpg" alt=""></li>
+				<li><img src="images3/gray3.jpg" alt=""></li>
+				<li><img src="images3/gray4.jpg" alt=""></li>
+				<li><img src="images3/gray5.jpg" alt=""></li>
+				<li><img src="images3/gray6.jpg" alt=""></li>
+			</ul>
+		</div>
+		<ul class="foot_list">
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red1.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">新手指导</li>
+					<li>用户注册</li>
+					<li>电话下单</li>
+					<li>购物流程</li>
+					<li>购物保障</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red2.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">支付方式</li>
+					<li>货到付款</li>
+					<li>商城卡支付</li>
+					<li>支付宝，网银支付</li>
+					<li>优惠卷抵用</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red3.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">配送方式</li>
+					<li>闪电发货</li>
+					<li>满百包邮</li>
+					<li>配送范围及时间</li>
+					<li>商品验收及签收</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red6.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">售后服务</li>
+					<li>退换货协议</li>
+					<li>关于发票</li>
+					<li>退换货流程</li>
+					<li>退换货运费</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red5.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">关于账号</li>
+					<li>修改个人信息</li>
+					<li>修改密码</li>
+					<li>找回密码</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clr"></div>
+		<div class="foot_line"></div>
+		<p align="center" class="padding-top">Copyright  2015-2020 Q-walking Fashion E&S 漫步时尚广场（QST教育）版权所有<br/>中国青岛 高新区广博路325号 青软教育集团 咨询热线：400-658-0166</p>
+		<p align="center"><img src="images3/foot_pic.jpg" alt=""></p>
+		<div class="clr"></div>
+	</div>
+	</footer>
+	<!-- 底部 end -->
+</body>
+</html>

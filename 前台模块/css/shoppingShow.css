@@ -1,0 +1,237 @@
+.fr{float: right;}
+.fl{float: left;}
+.clr{clear: both;}
+
+.orange{font-weight:700;color:#f60}
+.top_bg{border-bottom:1px solid #ccc;font-size:14px;font-family:"宋体";line-height:30px;background:#f7f7f7;height:30px}
+.top_content{width:1200px;margin:0 auto}
+.xl{display:inline-block;position:relative}
+.droparrow{position:relative;border:1px solid transparent;width:160px;height:30px;display:inline-block;padding-left:5px;z-index:1000}
+.xl>.dropdown{background:#fff;width:285px;height:225px;border:1px solid #ccc;padding:5px;position:absolute;right:0;top:30px;z-index:999;overflow-y:auto;overflow-x:hidden;display:none}
+.shop_pic li{float:left;margin:0 3px;line-height:20px}
+.shop_pic li p{text-align:center;color:gray}
+.shop_pic img{border:1px solid #ccc}
+.shop_pic img:hover{border:1px solid #f60}
+.shopcart{background:url(../images3/shoppingcart.png) no-repeat;width:16px;height:16px;display:inline-block;margin:5px 5px 0 0}
+/*logo+banner*/
+.logo_banner{
+	width: 1200px;
+	margin: 0 auto;
+}
+.nav_bg{
+	height: 50px;
+	background: #ce2626;
+	margin-bottom: 3px;
+}
+.nav{
+	float: left;
+	width: 100px;
+	margin: 0 30px 0 30px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center;
+}
+.nav a{
+	color: #fff;
+	font-weight: 600;
+}
+.nav_active{background:#b12121}
+a.white{color:#fff;text-decoration:none}
+a.white:hover{color:#ff0;text-decoration:none}
+/*main*/
+.main{
+	width: 1220px;
+	margin: 0 auto;
+}
+.left{
+	width: 220px;
+	border: 1px solid #e5e4e1;
+}
+.left li{
+	width: 220px;
+	height: 33px;
+	border-bottom: 1px solid #e5e4e1;
+	float: left;
+	line-height: 33px;
+	background: #fafafa;
+	font-size:14px ;
+	text-align: left;
+}
+.left_title{
+	display: block;
+	height: 33px;
+	background: #e5e4e1;
+	font-size:15px ;
+	text-indent: 20px;
+	text-align: left;
+	line-height: 33px;
+}
+.red_dot{
+	font-size:25px ;
+	margin-right: 10px;
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	margin-left: 10px;
+}
+.right_arrow{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	float: right;
+}
+.middle{
+	width: 690px;
+	height: 650px;
+}
+h3.pic_title{
+	font-size: 16px;
+	color: #fff;
+	font-weight: 600;
+	height: 40px;
+	background: red;
+	line-height: 40px;
+	margin: 0 0 4px 5px;
+	padding-left: 20px;
+}
+.pic_list{
+	margin:0 0 0 12px;
+}
+.pic_list>dl{
+	float: left;
+	width: 152px;
+	margin: 0 17px 10px 0;
+}
+.pic_list dl img{
+	padding: 5px;
+	border: 1px solid #ccc;
+	margin: 0 0 10px 0;
+}
+.pic_list dl dd{
+	float: left;
+}
+.price{
+	font-size:15px;
+	font-weight: 700;
+	float: left;
+	color: red;
+}
+.font12{
+	color: #ccc;
+	float: right;
+}
+.pic_list2{
+	margin:0 6px 0 12px;
+	font-size: 12px;
+}
+.pic_list2>li{
+	float: left;
+	width: 160px;
+	margin: 5px 4px;
+}
+.right_nav{
+	width:280px;
+	border:1px solid #eee;
+	float:left;
+	margin-left: 5px;
+}
+.notice_title{
+	background:#eee;
+	line-height:40px;
+	font-size:16px;
+	text-indent:20px;
+	text-align:left
+}
+.pic_list3 li{
+	margin:5px;
+	float:left;
+	width:83px
+}
+.pic_list3 li img{
+	border:1px solid #ccc
+}
+.price2{font-size:12px;font-weight:700;color:red;text-align:center}
+/*register*/
+.rebg{
+	background: #f8f8f8;
+	width: 1200px;
+	margin: 0 auto;
+	height: 500px;
+}
+.rele{
+	width: 780px;
+}
+.retop{
+	font-size: 20px;
+}
+.hr1{
+	width:90%;
+	color:#ccc; 
+}
+.reimg{
+	width: 420px;
+	height: 600px;
+}
+.fstyle{
+	font-size: 15px;
+
+}
+/*footer*/
+.footer{
+		background: #efefef;
+		height: 310px;
+		margin-top: 20px;
+}
+.foot_title{
+	background: #6a6665;
+	height: 40px;
+	padding-top: 8px;
+}
+.foot_pic{
+	margin: 0 auto;
+	width: 1200px;
+}
+.foot_pic>li{
+	width:20%;
+	float: left;
+	text-align:center;
+}
+.foot_list{
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 1000px;
+}
+.foot_list>li{
+	width: 20%;
+	float: left;
+}
+.foot_list ul{
+	padding-left:10px ;
+}
+.red1{
+	background: no-repeat;
+	width: 35px;
+	height: 31px;
+	display:block;
+}
+.line1{
+	background:url(images3/line1.jpg) no-repeat;
+	width: 20px;
+	height: 100px;
+	display: inline-block;
+}
+.font16{
+	font-size:16px ;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+.foot_line{
+	border-bottom: 1px solid #ccc;
+	font-size:12px ;
+	margin-top: 10px;
+}
+.padding_top{
+	padding-top: 10px;
+}
+

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时尚广场</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/shoppingCart.js"></script>
+	<script src="js/picSlide.js"></script>
+</head>
+<body>
+	<!-- 顶部 start -->
+	<header class="top_bg">
+		<div class="top_content">
+			<div class="fl"><img src="images2/star.jpg">收藏 | HI，欢迎来订购 ！<a href="#" class="orange">[请登录]</a> <a href="#"  class="orange"> [免费注册]</a></div>
+		    <div class="fr">客户服务<img src="images2/arrow.gif">&nbsp;网站导航<img src="images2/arrow.gif">&nbsp;
+		      <div class="xl">
+		      	<!--购物车-->
+		        <div class="droparrow" onclick="showCar()"><span class="shopcart"></span>我的购物车
+		        	<span class="orange">0</span>件<img src="images2/arrow.gif"/></div>
+		        <!--下拉菜单-->
+		        <div class="dropdown" id="dropdown" style="display: none" 
+		        	ondrop="drop(event)" ondragover="allowDrop(event)"> 
+		          <ul class="shop_pic">
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+	</header>
+	<!-- 顶部 end -->
+	<!-- logo+banner start -->
+	<div class=" clr logo_banner">
+		<div class="logo fl"><a href=""><img src="images3/logo.jpg" alt=""></a></div>
+		<div class="banner fr"><img src="images3/banner.jpg" alt="" class="fr"></div>
+		<div class="clr"></div>
+	</div>
+	<!-- logo+banner end -->
+    <!-- 菜单导航栏 start -->
+	<nav class="nav_bg">
+		 <div class="nav">&nbsp;</div>
+         <div class="nav nav_active"><a href="index.html" class="white">首页</a></div>
+         <div class="nav"><a href="shoppingShow.html" class="white">最新上架</a></div>
+         <div class="nav"><a href="#" class="white">品牌活动</a></div>
+         <div class="nav"><a href="#" class="white">原产直销</a></div>
+         <div class="nav"><a href="#" class="white">团购</a></div>
+         <div class="nav"><a href="#" class="white">限时抢购</a></div>
+         <div class="nav"><a href="#" class="white">促销打折</a></div>
+         <div class="nav">&nbsp;</div>
+	</nav>
+	<!-- 菜单导航栏 end -->
+	<!-- 中间部分 start -->
+	<section>
+		<div class="main">
+		<nav>
+			<ul class="left fl">
+				<li><span class="left_title">女装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">上衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">下装</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">连衣裙</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">内衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">男装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">T恤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">短裤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">衬衫</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">童装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">上衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">裤子</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">运动</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">运动裤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">跑步鞋</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+		    </ul>
+		</nav>
+		<div class="fl img">
+			<img src="images3/index/pic1.jpg" id="focusImg">
+			<ul class="focusBox">
+				<li onclick="showPic(1)"></li>
+				<li onclick="showPic(2)"></li>
+				<li onclick="showPic(3)"></li>
+			</ul>
+		</div>
+		<div class="fl right">
+		<div class="announce">
+			<div class="announce_title"><span>公告</span></div>
+			<ul>
+				<li><span>&nbsp;</span><a>李克强点赞网店第一村</a></li>
+				<li><span>&nbsp;</span><a>网购维权有望一站解决</a></li>
+				<li><span>&nbsp;</span><a>25国30万商品全球直供</a></li>
+				<li><span>&nbsp;</span><a>青岛交警淘宝体获公安部肯定</a></li>
+				<li><span>&nbsp;</span><a>面对新常态 惟改革创新</a></li>
+				<li><span>&nbsp;</span><a>差评敲诈淘宝 “差评师”获刑8个月</a></li>
+			</ul>
+		</div>
+		<div class="link_list">
+			<span><a href=""><img src="images3/index/link1.gif" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link2.gif" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link3.gif" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link4.gif" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link5.jpg" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link6.jpg" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link7.jpg" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link8.jpg" alt=""></a></span>
+			<span><a href=""><img src="images3/index/link9.jpg" alt=""></a></span>
+		</div>
+		</div>
+		<div class="fl mif">
+			<div class="recommend">
+				<img src="images3/index/pro1.jpg">
+				<div><span>热门品类<br/>
+                        护肤彩妆启示</span></div>
+				<span>洗护套装&nbsp;&nbsp;&nbsp;&nbsp;面部精华&nbsp;&nbsp;&nbsp;&nbsp;香水</span>
+				<span>粉底液&nbsp;&nbsp;&nbsp;&nbsp;面霜&nbsp;&nbsp;&nbsp;&nbsp;洁面</span>
+				<span>美容工具&nbsp;&nbsp;&nbsp;&nbsp;复方精油&nbsp;&nbsp;&nbsp;&nbsp;洗发水 </span>
+			</div>
+			<div class="recommend">
+				<img src="images3/index/pro2.jpg">
+				<div><span>强效保养<br/>
+                        逆转皮肤问题</span></div>
+				<span>隔离&nbsp;&nbsp;&nbsp;&nbsp;保湿&nbsp;&nbsp;&nbsp;&nbsp;补水&nbsp;&nbsp;&nbsp;&nbsp;清洁</span>
+				<span>清爽&nbsp;&nbsp;&nbsp;&nbsp;排毒&nbsp;&nbsp;&nbsp;&nbsp;去角质</span>
+				<span>美白&nbsp;&nbsp;&nbsp;&nbsp;袪痘&nbsp;&nbsp;&nbsp;&nbsp;收缩毛孔&nbsp;&nbsp;&nbsp;&nbsp;紧质</span>
+			</div>
+			<div class="recommend">
+				<img src="images3/index/pro3.jpg">
+				<div><span>人气品牌<br/>
+                        最IN大牌</span></div>
+				<span>薇姿&nbsp;&nbsp;&nbsp;&nbsp;
+                        欧莱雅&nbsp;&nbsp;&nbsp;&nbsp;
+                        美宝莲&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<span>SK-II&nbsp;&nbsp;&nbsp;&nbsp;
+                        百雀羚&nbsp;&nbsp;&nbsp;&nbsp;
+                        雅顿&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<span>美即&nbsp;&nbsp;&nbsp;&nbsp;
+                        谜尚&nbsp;&nbsp;&nbsp;&nbsp;
+                        妮维雅 </span>
+			</div>
+			<div class="recommend">
+				<img src="images3/index/pro4.jpg">
+				<div><span>潮流单品<br/>
+                        当季最红</span></div>
+				<span>奶浴奶膏&nbsp;&nbsp;&nbsp;&nbsp;补水凝胶&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<span>防装生发液&nbsp;&nbsp;&nbsp;&nbsp;假发片&nbsp;&nbsp;&nbsp;&nbsp;香水</span>
+				<span>艾米尔彩妆&nbsp;&nbsp;&nbsp;&nbsp;丰胸美乳霜</span>
+			</div>
+			<div class="recommend">
+				<img src="images3/index/pro5.jpg">
+				<div><span>美装精选<br/>
+                        超赞专题</span></div>
+				<span>孕妇护肤&nbsp;&nbsp;&nbsp;&nbsp;护季保养</span>
+				<span>护肤嫩白集锦&nbsp;&nbsp;&nbsp;&nbsp;快速约会妆</span>
+				<span>美容时钟模式&nbsp;&nbsp;&nbsp;&nbsp;5步护肤术</span>
+			</div>
+		</div>
+	   </div>
+	</section>
+	<!-- 中间部分 end -->
+    <!-- 底部 start -->
+	<footer>
+		<div class=" clr footer">
+		<div class="foot_title">
+			<ul class="foot_pic">
+				<li><img src="images3/gray1.jpg" alt=""></li>
+				<li><img src="images3/gray2.jpg" alt=""></li>
+				<li><img src="images3/gray3.jpg" alt=""></li>
+				<li><img src="images3/gray4.jpg" alt=""></li>
+				<li><img src="images3/gray5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<ul class="foot_list">
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red1.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">新手指导</li>
+					<li>用户注册</li>
+					<li>电话下单</li>
+					<li>购物流程</li>
+					<li>购物保障</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red2.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">支付方式</li>
+					<li>货到付款</li>
+					<li>商城卡支付</li>
+					<li>支付宝，网银支付</li>
+					<li>优惠卷抵用</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red3.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">配送方式</li>
+					<li>闪电发货</li>
+					<li>满百包邮</li>
+					<li>配送范围及时间</li>
+					<li>商品验收及签收</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red6.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">售后服务</li>
+					<li>退换货协议</li>
+					<li>关于发票</li>
+					<li>退换货流程</li>
+					<li>退换货运费</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red5.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">关于账号</li>
+					<li>修改个人信息</li>
+					<li>修改密码</li>
+					<li>找回密码</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clr"></div>
+		<div class="foot_line"></div>
+		<p align="center" class="padding-top">Copyright  2015-2020 Q-walking Fashion E&S 漫步时尚广场（QST教育）版权所有<br/>中国青岛 高新区广博路325号 青软教育集团 咨询热线：400-658-0166</p>
+		<p align="center"><img src="images3/foot_pic.jpg" alt=""></p>
+		<div class="clr"></div>
+	</div>
+	</footer>
+	<!-- 底部 end -->
+</body>
+</html>

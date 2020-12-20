@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/show_frame.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/goodsOperator.js"></script>
+	<script src="js/hotAdvise.js"></script>
+</head>
+<body>
+	<!-- 顶部 start -->
+	<header class="top_bg">
+		<div class="top_content">
+			<div class="fl"><img src="images2/star.jpg">收藏 | HI，欢迎来订购 ！<a href="#" class="orange">[请登录]</a> <a href="#"  class="orange"> [免费注册]</a></div>
+		    <div class="fr">客户服务<img src="images2/arrow.gif">&nbsp;网站导航<img src="images2/arrow.gif">&nbsp;
+		      <div class="xl">
+		      	<!--购物车-->
+		        <div class="droparrow" onclick="showCar()"><span class="shopcart"></span>我的购物车
+		        	<span class="orange">0</span>件<img src="images2/arrow.gif"/></div>
+		        <!--下拉菜单-->
+		        <div class="dropdown" id="dropdown" style="display: none" 
+		        	ondrop="drop(event)" ondragover="allowDrop(event)"> 
+		          <ul class="shop_pic">
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+	</header>
+	<!-- 顶部 end -->
+	<!-- logo+banner start -->
+	<div class=" clr logo_banner">
+		<div class="logo fl"><a href=""><img src="images3/logo.jpg" alt=""></a></div>
+		<div class="banner fr"><img src="images3/banner.jpg" alt="" class="fr"></div>
+		<div class="clr"></div>
+	</div>
+	<!-- logo+banner end -->
+    <!-- 菜单导航栏 start -->
+	<nav class="nav_bg">
+		 <div class="nav">&nbsp;</div>
+         <div class="nav nav_active"><a href="index.html" class="white">首页</a></div>
+         <div class="nav"><a href="shoppingShow.html" class="white">最新上架</a></div>
+         <div class="nav"><a href="#" class="white">品牌活动</a></div>
+         <div class="nav"><a href="#" class="white">原产直销</a></div>
+         <div class="nav"><a href="#" class="white">团购</a></div>
+         <div class="nav"><a href="#" class="white">限时抢购</a></div>
+         <div class="nav"><a href="#" class="white">促销打折</a></div>
+         <div class="nav">&nbsp;</div>
+	</nav>
+	<!-- 菜单导航栏 end -->
+	<!-- 中间部分 start -->
+	<section>
+		<div class="main">
+		<nav>
+			<ul class="left fl">
+				<li><span class="left_title">女装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">上衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">下装</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">连衣裙</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">内衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">男装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">T恤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">短裤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">衬衫</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">童装</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">上衣</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">裤子</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">运动</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">运动裤</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">跑步鞋</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title"><a href="#">更多分类</a></span></li>
+		    </ul>
+		</nav>
+		<div class=" fl middle">
+			<h1 class="pic_title">商品详情</h1>
+			<div class="pic_list">
+				<div id="box"><img src="images3/showdetail/dd1.jpg" width="400" height="400" id="showGoodsPicture"><div id="shade"></div></div>
+				<ul class="small_piclist" id="goodsList">
+					<li><img src="images3/showdetail/dd1.jpg" onclick="changeGoodsImage(this)"></li>
+					<li><img src="images3/showdetail/dd2.jpg" onclick="changeGoodsImage(this)"></li>
+					<li><img src="images3/showdetail/dd3.jpg" onclick="changeGoodsImage(this)"></li>
+					<li><img src="images3/showdetail/dd4.jpg" onclick="changeGoodsImage(this)"></li>
+					<li><img src="images3/showdetail/dd5.jpg" onclick="changeGoodsImage(this)"></li>
+				</ul>
+				<canvas id="canvas" width="400px" height="400px" class=""></canvas>
+			</div>
+			<div class="fl">
+				<h1 class="font16">冬季新款牛仔外套女中长款加厚</br>女冬装连帽毛领加绒牛仔棉衣女风衣</h1>
+				<img src="images3/showdetail/pic_mess.jpg" alt="">
+			</div>
+			<ul class="tab fl" id="goodsTabs">
+				<li class="tab_active" onclick="changeGoodsInfo(this)">商品详情</li>
+				<li class="" onclick="changeGoodsInfo(this)">商品评价</li>
+				<li class="" onclick="changeGoodsInfo(this)">成交记录</li>
+			</ul>
+			<article class="clr tab_content1">
+				<ul class="particulars">
+					<li title="修身">服装版型：修身</li>
+					<li title="甜美">风格：甜美</li>
+					<li title="瑞丽">甜美：瑞丽</li>
+					<li title="中长款">衣长：中长款</li>
+					<li title="长袖">袖长：长袖</li>
+					<li title="常规">袖型：常规</li>
+					<li title="戴帽">领型：带帽</li>
+					<li title="拉链">衣门襟：拉链</li>
+					<li title="纯色">图案：纯色</li>
+					<li title="81%(含)-90%（含）">成分含量：81%（含）</li>
+					<li title="棉">质地：棉</li>
+					<li title="25-29周岁">适用年龄：25-29周岁</li>
+					<li title="2015年冬季">年份季节：2015年冬季</li>
+					<li title="深蓝色 蓝色">颜色分类：深蓝色 蓝色</li>
+					<li title="M L XL 2XL">尺码：M L XL 2XL</li>
+				</ul>
+				<section>
+					<img src="images3/showdetail/detail1.jpg" class="img_border" alt="">
+					<img src="images3/showdetail/detail2.jpg" class="img_border" alt="">
+					<img src="images3/showdetail/detail3.jpg" class="img_border" alt="">
+					<img src="images3/showdetail/detail4.jpg" class="img_border" alt="">
+					<img src="images3/showdetail/detail5.jpg" class="img_border" alt="">
+					<img src="images3/showdetail/detail6.jpg" class="img_border" alt="">
+				</section>
+			</article>
+			<article class="tab_content2 none"><img src="images3/showdetail/pinglun.jpg" alt=""></article>
+			<article class="tab_content3 none">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th>买家</th>
+							<th>淘宝价</th>
+							<th>数量</th>
+							<th>付款时间</th>
+							<th>款式和型号</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>a==男(匿名)</td>
+							<td><em class=price2>￥198.00</em></td>
+							<td>1</td>
+							<td>2015-07-31 20:08:39</td>
+							<td><div><p>颜色分类：深蓝色[胸前格纹]</p>
+							<p>尺码：L</p></div></td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<h1 class="pic_title">看了又看</h1>
+				<ul class="pic_list4">
+					<li>
+						<img src="images3/showdetail/ss1.jpg" alt="" title="2015新款条纹显瘦v零短袖背宽宽松连身裤">
+						<p>2015新款条纹显瘦v零短袖背宽宽松连身裤</p>
+					</li>
+					<li>
+						<img src="images3/showdetail/ss2.jpg" alt="" title="2015新款条纹显瘦v零短袖背宽宽松连身裤">
+						<p>2015新款条纹显瘦v零短袖背宽宽松连身裤</p>
+					</li>
+					<li>
+						<img src="images3/showdetail/ss3.jpg" alt="" title="2015新款条纹显瘦v零短袖背宽宽松连身裤">
+						<p>2015新款条纹显瘦v零短袖背宽宽松连身裤</p>
+					</li>
+					<li>
+						<img src="images3/showdetail/ss4.jpg" alt="" title="2015新款条纹显瘦v零短袖背宽宽松连身裤">
+						<p>2015新款条纹显瘦v零短袖背宽宽松连身裤</p>
+					</li>
+					<li>
+						<img src="images3/showdetail/ss5.jpg" alt="" title="2015新款条纹显瘦v零短袖背宽宽松连身裤">
+						<p>2015新款条纹显瘦v零短袖背宽宽松连身裤</p>
+					</li>
+				</ul>
+			</article>
+	   </div>
+	   <aside class="right_nav">
+	   </aside>
+	   </div>
+	</section>
+	<!-- 中间部分 end -->
+    <!-- 底部 start -->
+	<footer>
+		<div class=" clr footer">
+		<div class="foot_title">
+			<ul class="foot_pic">
+				<li><img src="images3/gray1.jpg" alt=""></li>
+				<li><img src="images3/gray2.jpg" alt=""></li>
+				<li><img src="images3/gray3.jpg" alt=""></li>
+				<li><img src="images3/gray4.jpg" alt=""></li>
+				<li><img src="images3/gray5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<ul class="foot_list">
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red1.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">新手指导</li>
+					<li>用户注册</li>
+					<li>电话下单</li>
+					<li>购物流程</li>
+					<li>购物保障</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red2.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">支付方式</li>
+					<li>货到付款</li>
+					<li>商城卡支付</li>
+					<li>支付宝，网银支付</li>
+					<li>优惠卷抵用</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red3.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">配送方式</li>
+					<li>闪电发货</li>
+					<li>满百包邮</li>
+					<li>配送范围及时间</li>
+					<li>商品验收及签收</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red6.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">售后服务</li>
+					<li>退换货协议</li>
+					<li>关于发票</li>
+					<li>退换货流程</li>
+					<li>退换货运费</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red5.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">关于账号</li>
+					<li>修改个人信息</li>
+					<li>修改密码</li>
+					<li>找回密码</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clr"></div>
+		<div class="foot_line"></div>
+		<p align="center" class="padding-top">Copyright  2015-2020 Q-walking Fashion E&S 漫步时尚广场（QST教育）版权所有<br/>中国青岛 高新区广博路325号 青软教育集团 咨询热线：400-658-0166</p>
+		<p align="center"><img src="images3/foot_pic.jpg" alt=""></p>
+		<div class="clr"></div>
+	</div>
+	</footer>
+	<!-- 底部 end -->
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+	background:url(../images1/login.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.clr{
+	clear: both;
+}
+.box{
+	background:url(../images1/logininfo.png) no-repeat;
+	width: 700px;
+	height: 300px;
+	position: absolute;
+	left: 650px;
+	top: 200px;
+}
+h2{
+	font-size: 30px;
+	text-align: center;
+	height: 80px;
+}
+.login_box{
+	position: absolute;
+	left: 230px;
+	top: 100px;
+}
+.login_box li{
+	height: 80px;
+}
+.login_box li label{
+	display: block;
+	font-size: 20px;
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+.login_box li input{
+	width: 250px;
+	height: 30px;
+}
+#btn{
+	background: #6A9D67;
+	border-radius: 10px;
+}

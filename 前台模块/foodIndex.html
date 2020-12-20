@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>美食广场</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/foodIndex.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/shoppingCart.js"></script>
+	<script src="js/picSlide.js"></script>
+</head>
+<body>
+	<!-- 顶部 start -->
+	<header class="top_bg">
+		<div class="top_content">
+			<div class="fl"><img src="images2/star.jpg">收藏 | HI，欢迎来订购 ！<a href="#" class="orange">[请登录]</a> <a href="#"  class="orange"> [免费注册]</a></div>
+		    <div class="fr">客户服务<img src="images2/arrow.gif">&nbsp;网站导航<img src="images2/arrow.gif">&nbsp;
+		      <div class="xl">
+		      	<!--购物车-->
+		        <div class="droparrow" onclick="showCar()"><span class="shopcart"></span>我的购物车
+		        	<span class="orange">0</span>件<img src="images2/arrow.gif"/></div>
+		        <!--下拉菜单-->
+		        <div class="dropdown" id="dropdown" style="display: none" 
+		        	ondrop="drop(event)" ondragover="allowDrop(event)"> 
+		          <ul class="shop_pic">
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+	</header>
+	<!-- 顶部 end -->
+	<!-- logo+banner start -->
+	<div class=" clr logo_banner">
+		<div class="logo fl"><a href=""><img src="images3/logo.jpg" alt=""></a></div>
+		<div class="banner fr"><img src="images2/food1.jfif" alt="" class="fr"></div>
+		<div class="clr"></div>
+	</div>
+	<!-- logo+banner end -->
+	<!-- 菜单导航栏 start -->
+	<nav class="nav_bg">
+		 <div class="nav">&nbsp;</div>
+         <div class="nav nav_active"><a href="#" class="white">首页</a></div>
+         <div class="nav"><a href="#" class="white">美食</a></div>
+         <div class="nav"><a href="#" class="white">身边外卖</a></div>
+         <div class="nav"><a href="#" class="white">今日新品</a></div>
+         <div class="nav"><a href="#" class="white">团购</a></div>
+         <div class="nav"><a href="#" class="white">休闲娱乐</a></div>
+         <div class="nav"><a href="#" class="white">生活服务</a></div>
+         <div class="nav">&nbsp;</div>
+	</nav>
+	<!-- 菜单导航栏 end -->
+	<div class="main">
+		<div class="fl left">
+			<ul class="fl">
+				<li><span class="left_title">按种类</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">火锅</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">日韩料理</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">西餐</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">小吃快餐</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">自助餐</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">按地区</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">市北区</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">市南区</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">李沧区</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">崂山区</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">黄岛区</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li><span class="left_title">按人数</span></li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">单人餐</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">双人餐</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">3-4人</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+				<li class="left_list">
+					<img src="images3/red_dot.jpg" class="red_dot">
+					<a href="">5-6人</a>
+					<img src="images3/arrow_r.jpg" class="right_arrow">
+				</li>
+			</ul>
+			<div class="love fl">
+				<div class="love1">
+					<span class="love11">| 猜你喜欢</span>
+					<span class="love12">更多>></span>
+				</div>
+				<div class="love2">
+					<img src="images2/meishi1.jpg" alt="">
+					<span class="love21">鱼香肉丝</span>
+					<span class="love22"￥30.00>￥25.0</span>
+				</div>
+			</div>
+		</div>
+		<div class="fl img">
+			<img src="images2/f1.jpg" id="focusImg">
+			<ul class="focusBox">
+				<li onclick="showPic(1)"></li>
+				<li onclick="showPic(2)"></li>
+				<li onclick="showPic(3)"></li>
+			</ul>
+		</div>
+		<div class="fl food_list">
+			<div>
+				<img src="images2/meishi3.jpg" alt="">
+				<span class="f1">番茄烩金针菇</span>
+				<span class="f2">￥20.0</span>
+			</div>
+			<div>
+				<img src="images2/meishi4.jpg" alt="">
+				<span class="f1">可乐鸡翅</span>
+				<span class="f2">￥25.0</span>
+			</div>
+		</div>
+		<div class="fl food_remd">
+			<div class="food_title"><span class="f3">| 今日新单</span><span class="f4">更多>></span></div>
+			<div class="meishi">
+				<div>
+					<a href="#"><img src="images2/meishi5.png" alt=""></a>
+					<span class="f5">天宝兄弟</span>
+					<span class="f7">湘菜/家常菜</span><span class="f6">¥177/人</span>
+				</div>
+				<div>
+					<a href="#"><img src="images2/meishi6.png" alt=""></a>
+					<span class="f5">费大厨辣椒炒肉</span>
+					<span class="f7">湘菜/家常菜</span><span class="f6">¥64/人</span>
+				</div>
+				<div>
+					<a href="#"><img src="images2/meishi7.png" alt=""></a>
+					<span class="f5">霸王虾·长沙麻辣小龙虾(湘江世纪城店)</span>
+					<span class="f7">小龙虾</span><span class="f6">人均 ¥128</span>
+				</div>
+				<div>
+					<a href="#"><img src="images2/meishi8.png" alt=""></a>
+					<span class="f5">呷哺呷哺(中茂城店) </span>
+					<span class="f7">火锅</span><span class="f6">人均: 89元</span>
+				</div>
+				<div>
+					<a href="#"><img src="images2/meishi9.png" alt=""></a>
+					<span class="f5">海底捞火锅(旭辉广场店)</span>
+					<span class="f7">火锅</span><span class="f6">人均 ￥116</span>
+				</div>
+				<div>
+					<a href="i#"><img src="images2/meishi10.png" alt=""></a>
+					<span class="f5">蜀大侠火锅(步步高梅溪新天地店)</span>
+					<span class="f7">火锅</span><span class="f6">人均 ￥89</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clr test">
+		<div class="test_img1"><img src="images3/arrow_r.jpg" alt=""></div>
+		<div class="test2"><img src="images2/test1.jpg" alt="">
+		<span class="love21">鱼香肉丝</span>
+		<span class="love22">￥30.00</span></div>
+		<div class="test2"><img src="images2/test2.jpg" alt="">
+		<span class="love21">鱼香肉丝</span>
+		<span class="love22">￥30.00</span></div>
+		<div class="test2"><img src="images2/test3.jpg" alt="">
+		<span class="love21">鱼香肉丝</span>
+		<span class="love22">￥30.00</span></div>
+		<div class="test2"><img src="images2/test4.jpg" alt="">
+		<span class="love21">鱼香肉丝</span>
+		<span class="love22">￥30.00</span></div>
+		<div class="test2"><img src="images2/test5.jpg" alt="">
+		<span class="love21">鱼香肉丝</span>
+		<span class="love22">￥30.00</span></div>
+		<div class="test_img2"><img src="images3/arrow_r.jpg" alt=""></div>
+	</div>
+	<!-- 底部 start -->
+	<footer>
+		<div class=" clr footer">
+		<div class="clr"></div>
+		<div class="foot_line"></div>
+		<p align="center" class="padding-top">Copyright  2015-2020 Q-walking Fashion E&S 漫步时尚广场（QST教育）版权所有<br/>中国青岛 高新区广博路325号 青软教育集团 咨询热线：400-658-0166</p>
+		<p align="center"><img src="images3/foot_pic.jpg" alt=""></p>
+		<div class="clr"></div>
+	</div>
+	</footer>
+	<!-- 底部 end -->
+</body>
+</html>

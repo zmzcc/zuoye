@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/register.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/validate.js"></script>
+</head>
+<body>
+	<!-- 顶部 start -->
+	<header class="top_bg">
+		<div class="top_content">
+			<div class="fl"><img src="images2/star.jpg">收藏 | HI，欢迎来订购 ！<a href="#" class="orange">[请登录]</a> <a href="#"  class="orange"> [免费注册]</a></div>
+		    <div class="fr">客户服务<img src="images2/arrow.gif">&nbsp;网站导航<img src="images2/arrow.gif">&nbsp;
+		      <div class="xl">
+		      	<!--购物车-->
+		        <div class="droparrow" onclick="showCar()"><span class="shopcart"></span>我的购物车
+		        	<span class="orange">0</span>件<img src="images2/arrow.gif"/></div>
+		        <!--下拉菜单-->
+		        <div class="dropdown" id="dropdown" style="display: none" 
+		        	ondrop="drop(event)" ondragover="allowDrop(event)"> 
+		          <ul class="shop_pic">
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+	</header>
+	<!-- 顶部 end -->
+	<!-- logo+banner start -->
+	<div class=" clr logo_banner">
+		<div class="logo fl"><a href=""><img src="images3/logo.jpg" alt=""></a></div>
+		<div class="banner fr"><img src="images3/banner.jpg" alt="" class="fr"></div>
+		<div class="clr"></div>
+	</div>
+	<!-- logo+banner end -->
+    <!-- 菜单导航栏 start -->
+	<nav class="nav_bg">
+		 <div class="nav">&nbsp;</div>
+         <div class="nav nav_active"><a href="index.html" class="white">首页</a></div>
+         <div class="nav"><a href="shoppingShow.html" class="white">最新上架</a></div>
+         <div class="nav"><a href="#" class="white">品牌活动</a></div>
+         <div class="nav"><a href="#" class="white">原产直销</a></div>
+         <div class="nav"><a href="#" class="white">团购</a></div>
+         <div class="nav"><a href="#" class="white">限时抢购</a></div>
+         <div class="nav"><a href="#" class="white">促销打折</a></div>
+         <div class="nav">&nbsp;</div>
+	</nav>
+	<!-- 菜单导航栏 end -->
+<!-- 注册部分 start -->
+<div class="register">
+<div class="register_left">
+    <div class="register_title"><span>用户注册</span>
+    <hr width="90%"/></div>
+	<form id="registerForm">
+		<div>
+			<label>用户名：</label>
+			<input type="text" name="userName" placeholder="请输入用户名" id="userName">
+		</div>
+			<label>邮箱地址：</label>
+			<input type="text" name="email" placeholder="请输入邮箱地址" id="email">
+		<div>
+		</div>
+			<label>设置密码：</label>
+			<input type="passward" name="userPwd" id="userPwd">
+			<br>
+			<label>&nbsp;</label>
+			<span>&nbsp;6-20个字符，由字母，数字和符号的两种以上组合。&nbsp;</span>
+		<div>
+			<label>确认密码：</label>
+			<input type="passward" name="userRePwd" id="userRePwd">
+		</div>
+		<div>
+			<label>真实姓名：</label>
+			<input type="text" name="realName" placeholder="请输入真实姓名">
+		</div>
+		<div>
+			<label>你的性别：</label>
+			<input type="radio" name="sex" value="man" checked="checked">男<input type="radio" name="sex" value="woman">女
+		</div>
+		<div>
+			<label>上传头像：</label>
+			<input type="file" name="headPic">
+		</div>
+		<div>
+			<label>手机号码：</label>
+			<input type="text" name="mobile" placeholder="请输入你的手机号">
+		</div>
+		<div>
+			<label>单位名称：</label>
+			<input type="text" name="company" placeholder="请输入单位名称">
+		</div>
+		<div>
+			<label>单位地址：</label>
+			<select name="prov" id="prov">
+				<option value="0">请选择</option>
+				<option value="山东省">山东省</option>
+				<option value="河北省">河北省</option>
+				<option value="江苏省">江苏省</option>
+			</select>
+			<select name="city" id="city">
+				<option value="0">请选择</option>
+			</select>
+			<select name="area" id="area">
+				<option value="0">请选择</option>
+			</select>
+		</div>
+		<div>
+			<label>你的爱好：</label>
+			<input type="checkbox" name="hobby" value="购物">购物
+			<input type="checkbox" name="hobby" value="影视">影视
+			<input type="checkbox" name="hobby" value="餐饮">餐饮
+		</div>
+		<div>
+			<label>协议内容：</label>
+			<textarea cols="30" rows="6"></textarea>
+		</div>
+		<div>
+			<br>
+			<label>&nbsp;&nbsp;</label>
+			<input type="submit" name="button" value="提交">
+		</div>
+	</form>
+</div>
+<div class="register_right"><img src="images2/zhuce_pic.jpg" alt=""></div>
+</div>
+<!-- 注册部分 end -->     
+<!-- 底部区域 start -->
+<div class=" clr footer">
+		<div class="foot_title">
+			<ul class="foot_pic">
+				<li><img src="images3/gray1.jpg" alt=""></li>
+				<li><img src="images3/gray2.jpg" alt=""></li>
+				<li><img src="images3/gray3.jpg" alt=""></li>
+				<li><img src="images3/gray4.jpg" alt=""></li>
+				<li><img src="images3/gray5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<ul class="foot_list">
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red1.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">新手指导</li>
+					<li>用户注册</li>
+					<li>电话下单</li>
+					<li>购物流程</li>
+					<li>购物保障</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red2.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">支付方式</li>
+					<li>货到付款</li>
+					<li>商城卡支付</li>
+					<li>支付宝，网银支付</li>
+					<li>优惠卷抵用</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red3.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">配送方式</li>
+					<li>闪电发货</li>
+					<li>满百包邮</li>
+					<li>配送范围及时间</li>
+					<li>商品验收及签收</li>
+					<li>服务协议</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red6.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">售后服务</li>
+					<li>退换货协议</li>
+					<li>关于发票</li>
+					<li>退换货流程</li>
+					<li>退换货运费</li>
+				</ul>
+			</li>
+			<li>
+				<div class="fl">
+					<p class="red1"><img src="images3/red5.jpg" alt=""></p>
+					<p class="line1"></p>
+				</div>
+				<ul class="fl">
+					<li class="font16">关于账号</li>
+					<li>修改个人信息</li>
+					<li>修改密码</li>
+					<li>找回密码</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clr"></div>
+		<div class="foot_line"></div>
+		<p align="center" class="padding-top">Copyright  2015-2020 Q-walking Fashion E&S 漫步时尚广场（QST教育）版权所有<br/>中国青岛 高新区广博路325号 青软教育集团 咨询热线：400-658-0166</p>
+		<p align="center"><img src="images3/foot_pic.jpg" alt=""></p>
+		<div class="clr"></div>
+	</div>
+<!-- 底部区域 end -->                                                                                          
+</body>
+</html>
